@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Fifty coffees</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="imagenes/logo.jpeg" type="image/jpeg">
+</head>
+<body>
+    <header id="cabecera">
+        <h1>fifty coffees</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa-regular fa-heart"></i>Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-pen"></i>Blog</a></li>
+                <li><a href="galeria.html"><i class="fa-solid fa-image"></i>Galería</a></li>
+                <li><a href="videos.html"><i class="fa-solid fa-video"></i>Videos</a></li>
+                <li><a href="contactos.html" class="activo"><i class="fa-solid fa-address-book"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido" class="ancho degradado">
+        <section id="contacto">
+            <!-- Tabla con los datos de contacto -->
+            <div id="datos">
+                <table>
+                    <tr>
+                        <th colspan="2">Información de Contacto</th>
+                    </tr>
+                    <tr>
+                        <td>Dirección</td>
+                        <td>La Esperanza Mz. J Lt. 6 - Cieneguilla, Lima Perú</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfonos</td>
+                        <td>913489792|955173515</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>info@fiftycoffees.com</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Horarios de Atención Presencial</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Área de Ventas:<br>De Lunes a viernes de 8 am a 6 pm</td>
+                    </tr>
+                </table>
+                <img src="imagenes/cafecito.jpg" alt="Taza de café con arte latte en forma de corazón">
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div id="formulario">
+                <form action="#" method="get" name="contacto">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                    <label for="celular">Celular*</label>
+                    <input type="tel" id="celular" name="celular" maxlength="9" placeholder="999 999 999" required>
+
+                    <label for="correo">Correo electrónico*</label>
+                    <input type="email" id="correo" name="correo" placeholder="nombre@dominio.com" required>
+
+                    <label for="ruc">RUC - Empresa (opcional)</label>
+                    <input type="text" id="ruc" name="ruc" maxlength="11">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Detalla tu experiencia a continuación como punto de inicio"></textarea>
+
+                    <input type="submit" value="ENVIAR" class="btn">
+                </form>
+            </div>
+        </section>
+
+        <!-- Mapa de Google (iframe de Google Maps con la direccion del local) -->
+        <section id="mapa">
+            <h2>Local Central</h2>
+            <iframe src="https://www.google.com/maps?q=La+Esperanza+Mz+J+Lt+6,+Cieneguilla,+Lima,+Peru&amp;output=embed" title="Mapa del local central" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+    </main>
+    <footer>
+        <ul class="redes">
+            <li><a href="https://x.com/" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
